@@ -41,7 +41,7 @@
     <title>Maison Aurouze</title>
 </head>
 
-<body>
+<body onload="incrementCount(10)">
     <div class="header">
         <p>POUR UNE LUTTE RAISONNÉE CONTRE LES NUISIBLES ET PARASITES</p>
         <div class="rechercher">
@@ -72,7 +72,10 @@
             <p id="teexte">MARQUES</p>
             <p id="teeexte">FAQ</p>
             <p id="ttexte">QUI SOMMES NOUS ?</p>
-            <img src="../assets/img/Frame 661.png" alt="Pousse_pousse" style="cursor: pointer;">
+            <button id="panier" type="button" onclick="increment()"><img src="../assets/img/Frame 661.png" alt="Pousse_pousse" style="cursor: pointer;"> <span id="Panier_number" >0
+            </span>
+            </button>
+            <!-- <img src="../assets/img/Frame 661.png" alt="Pousse_pousse" style="cursor: pointer;"> -->
         </div>
     </div>
     <div class="principal_container">
@@ -325,6 +328,8 @@
     </div>
     </div>
     </div>
+    <script src="../js/main.js"></script>
 </body>
+
 
 </html>
